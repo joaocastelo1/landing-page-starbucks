@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+*{
+    margin:0px;padding: 0px;box-sizing: border-box;font-family:'Nunito',sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style:none;
+}
+.circle{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    clip-path: circle(600px at right 800px);
+    transition: all 2s;
+}
+section{
+    position: relative;
+    width:100%;
+    height: 100vh;
+    display: flex;
+    padding: 100px;
+    justify-content: space-between;
+    align-items:center;
+    background-color: #ffff;
+}
+header{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+header .logo{
+    position: relative;
+    max-width: 80px;
+}
+header ul{
+    position: relative;
+    display: flex;
+}
+header li a{
+    display: inline-block;
+    color:rgba(133, 133, 133, 0.8);
+    font-weight: 400;
+    margin-left: 30px;
+}
+.container{
+    position: relative;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text-box{
+    position: relative;
+    width:600px;
+}
+.text-box h2{
+    color:#222;
+    font-size: 3.5em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+h2 span{
+    color:#017143;
+    font-size: 1.2em;
+    font-weight:1000;
+}
+.text-box p{
+    color:#333;
+}
+.text-box a{
+    display: inline-block;
+    margin-top:20px;
+    padding: 10px 20px;
+    background-color: #017143;
+    color:#fff;
+    border-radius: 40px;
+    font-weight:700;
+    letter-spacing: 1px;
+}
+.img-box{
+    width:600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top:100px;
+    transition: all 0.6s;
+}
+.img-box img{
+    max-width: 340px;
+}
+.thumb{
+    position: absolute;
+    left:50%;
+    bottom:20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+.thumb li{
+    display: inline-block;
+    margin:0 20px;
+    cursor:pointer;
+    transition:all 0.5s;
+}
+.thumb li:hover{
+    transform: translateY(-20px);
+}
+.thumb li img{
+    max-width:60px;
+}
+.rs{
+    position: absolute;
+    top: 60%;
+    right:30px;
+    transform: translateY(-50%);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.rs li a{
+    display: inline-block;
+    margin:8px 0;
+    transform: scale(0.6);
+    filter: invert(1);
+}
